@@ -1,3 +1,5 @@
+-- Carry People Simulator 3
+
 -- Identifier le jeu actuel via son ID
 local placeId = game.PlaceId
 
@@ -27,6 +29,8 @@ if placeId == 7267631004 then  -- ID de "Carry People Simulator 3"
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
     end
 
+--  Build A Boat For Treasure
+
 elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
     -- Charger et exécuter le premier script
     local success1, error1 = pcall(function()
@@ -50,3 +54,43 @@ elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
     end
 end
+
+--      Prison Life
+
+elseif placeId == 155615604 then  -- ID de "Prison Life" For Treasure"
+    -- Charger et exécuter le premier script
+    local success1, error1 = pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/TigerAdmin.lua"))()
+    end)
+    -- Vérification du premier script
+    if success1 then
+        print("Premier script exécuté avec succès.")
+    else
+        warn("Erreur lors de l'exécution du premier script : ", error1)
+    end
+
+    -- Charger et exécuter le deuxième script
+    local success2, error2 = pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
+    end)
+    -- Vérification du deuxième script
+    if success2 then
+        print("Deuxième script exécuté avec succès.")
+    else
+        warn("Erreur lors de l'exécution du deuxième script : ", error2)
+    end
+end
+
+--      Bloxfruit
+
+elseif placeId == 2753915549 then  -- ID de "Bloxfruit"
+    -- Charger et exécuter le premier script
+    local success1, error1 = pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/Bloxfruits/main/redz9999"))()
+    end)
+    -- Vérification du premier script
+    if success1 then
+        print("Premier script exécuté avec succès.")
+    else
+        warn("Erreur lors de l'exécution du premier script : ", error1)
+    end
