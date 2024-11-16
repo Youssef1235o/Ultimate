@@ -59,7 +59,7 @@ elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
 elseif placeId == 155615604 then  -- ID de "Prison Life"
     -- Charger et exécuter le premier script
     local success1, error1 = pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/TigerAdmin.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/iamnotadingus/Hive-Hub/refs/heads/main/RELEASED",true))()
     end)
     -- Vérification du premier script
     if success1 then
