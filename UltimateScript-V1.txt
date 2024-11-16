@@ -1,0 +1,52 @@
+-- Identifier le jeu actuel via son ID
+local placeId = game.PlaceId
+
+if placeId == 7267631004 then  -- ID de "Carry People Simulator 3"
+    -- Exécuter le script principal pour "Carry People Simulator 3"
+    print("Vous êtes dans Carry People Simulator 3. Chargement des scripts...")
+    
+    -- Charger et exécuter le premier script
+    local success1, error1 = pcall(function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/YSL3xKYU'))()
+    end)
+    -- Vérification du premier script
+    if success1 then
+        print("Premier script exécuté avec succès.")
+    else
+        warn("Erreur lors de l'exécution du premier script : ", error1)
+    end
+
+    -- Charger et exécuter le deuxième script
+    local success2, error2 = pcall(function()
+        loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-Anti-kick-11846'))()
+    end)
+    -- Vérification du deuxième script
+    if success2 then
+        print("Deuxième script exécuté avec succès.")
+    else
+        warn("Erreur lors de l'exécution du deuxième script : ", error2)
+    end
+
+elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
+    -- Charger et exécuter le premier script
+    local success1, error1 = pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuildsupportkrampus.txt", true))()
+    end)
+    -- Vérification du premier script
+    if success1 then
+        print("Premier script exécuté avec succès.")
+    else
+        warn("Erreur lors de l'exécution du premier script : ", error1)
+    end
+
+    -- Charger et exécuter le deuxième script
+    local success2, error2 = pcall(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Youssef1235o/BuildBoatGui/main/Gui-Build-Boat.txt"))()
+    end)
+    -- Vérification du deuxième script
+    if success2 then
+        print("Deuxième script exécuté avec succès.")
+    else
+        warn("Erreur lors de l'exécution du deuxième script : ", error2)
+    end
+end
