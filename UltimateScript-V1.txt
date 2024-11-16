@@ -29,7 +29,7 @@ if placeId == 7267631004 then  -- ID de "Carry People Simulator 3"
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
     end
 
---  Build A Boat For Treasure
+-- Build A Boat For Treasure
 
 elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
     -- Charger et exécuter le premier script
@@ -53,11 +53,10 @@ elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
     else
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
     end
-end
 
---      Prison Life
+-- Prison Life
 
-elseif placeId == 155615604 then  -- ID de "Prison Life" For Treasure"
+elseif placeId == 155615604 then  -- ID de "Prison Life"
     -- Charger et exécuter le premier script
     local success1, error1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/dalloc2/Roblox/main/TigerAdmin.lua"))()
@@ -79,9 +78,8 @@ elseif placeId == 155615604 then  -- ID de "Prison Life" For Treasure"
     else
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
     end
-end
 
---      Bloxfruit
+-- Bloxfruit
 
 elseif placeId == 2753915549 then  -- ID de "Bloxfruit"
     -- Charger et exécuter le premier script
@@ -94,3 +92,7 @@ elseif placeId == 2753915549 then  -- ID de "Bloxfruit"
     else
         warn("Erreur lors de l'exécution du premier script : ", error1)
     end
+
+else
+    print("Jeu non reconnu.")
+end
