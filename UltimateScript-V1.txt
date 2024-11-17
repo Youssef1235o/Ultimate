@@ -59,7 +59,7 @@ elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
 elseif placeId == 155615604 then  -- ID de "Prison Life"
     -- Charger et exécuter le premier script
     local success1, error1 = pcall(function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexpln/PrizzLife/main/pladmin.lua'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
     end)
     -- Vérification du premier script
     if success1 then
