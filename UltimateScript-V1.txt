@@ -29,9 +29,12 @@ if placeId == 7267631004 then  -- ID de "Carry People Simulator 3"
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
     end
 
---  Build A Boat For Treasure
+-- Build A Boat For Treasure
 
 elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
+    -- Exécuter le script principal pour "Build A Boat For Treasure"
+    print("Vous êtes dans Build A Boat For Treasure. Chargement des scripts...")
+
     -- Charger et exécuter le premier script
     local success1, error1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/max2007killer/auto-build-not-limit/main/autobuildsupportkrampus.txt", true))()
@@ -53,11 +56,13 @@ elseif placeId == 537413528 then  -- ID de "Build A Boat For Treasure"
     else
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
     end
-end
 
---      Prison Life
+-- Prison Life
 
-elseif placeId == 155615604 then  -- ID de "Prison Life" For Treasure"
+elseif placeId == 155615604 then  -- ID de "Prison Life"
+    -- Exécuter le script principal pour "Prison Life"
+    print("Vous êtes dans Prison Life. Chargement des scripts...")
+
     -- Charger et exécuter le premier script
     local success1, error1 = pcall(function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexpln/PrizzLife/main/pladmin.lua'))()
@@ -79,11 +84,13 @@ elseif placeId == 155615604 then  -- ID de "Prison Life" For Treasure"
     else
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
     end
-end
 
---      Bloxfruit
+-- Bloxfruit
 
 elseif placeId == 2753915549 then  -- ID de "Bloxfruit"
+    -- Exécuter le script principal pour "Bloxfruit"
+    print("Vous êtes dans Bloxfruit. Chargement des scripts...")
+
     -- Charger et exécuter le premier script
     local success1, error1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/Bloxfruits/main/redz9999"))()
@@ -93,18 +100,14 @@ elseif placeId == 2753915549 then  -- ID de "Bloxfruit"
         print("Premier script exécuté avec succès.")
     else
         warn("Erreur lors de l'exécution du premier script : ", error1)
-end
+    end
 
 -- Legends Of Speed
 
--- Identifier le jeu actuel via son ID
-local placeId = game.PlaceId
+elseif placeId == 3101667897 then  -- ID de "Legends Of Speed"
+    -- Exécuter le script principal pour "Legends Of Speed"
+    print("Vous êtes dans Legends Of Speed. Chargement des scripts...")
 
-if placeId == 3101667897 then  -- ID de "Legends Of Speeds"
-
-    -- Exécuter le script principal pour "Legends Of Speeds"
-    print("Vous êtes dans Legends Of Speeds. Chargement des scripts...")
-    
     -- Charger et exécuter le premier script
     local success1, error1 = pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/WhackyCode/SPEEDDEVIL/main/legendsofspeed.lua"))()
@@ -125,4 +128,5 @@ if placeId == 3101667897 then  -- ID de "Legends Of Speeds"
         print("Deuxième script exécuté avec succès.")
     else
         warn("Erreur lors de l'exécution du deuxième script : ", error2)
+    end
 end
