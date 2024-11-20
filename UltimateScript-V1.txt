@@ -118,15 +118,3 @@ elseif placeId == 3101667897 then  -- ID de "Legends Of Speed"
     else
         warn("Erreur lors de l'exécution du premier script : ", error1)
     end
-
-    -- Charger et exécuter le deuxième script
-    local success2, error2 = pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/farghii/relzhub/main/execute.hack", true))()
-    end)
-    -- Vérification du deuxième script
-    if success2 then
-        print("Deuxième script exécuté avec succès.")
-    else
-        warn("Erreur lors de l'exécution du deuxième script : ", error2)
-    end
-end
